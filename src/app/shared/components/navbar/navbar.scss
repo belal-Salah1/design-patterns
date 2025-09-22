@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+
+::ng-deep .p-menubar {
+  .p-menubar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem 1rem;
+  }
+  
+  h1 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
