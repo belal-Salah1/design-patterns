@@ -21,7 +21,7 @@ export class Navbar {
       routerLink: '/adaptor'
     },
     {
-      label: "Factory",
+      label: "Strategy",
       routerLink: '/text-format'
     }
   ]

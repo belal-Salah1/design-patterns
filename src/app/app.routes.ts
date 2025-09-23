@@ -26,8 +26,8 @@ export const routes: Routes = [
     {
         data:
         {
-            title: 'Factory Pattern',
-            subTitle: 'Welcome to the factory pattern page'
+            title: 'Strategy Pattern',
+            subTitle: 'Welcome to the Strategy pattern page'
         },
         path: 'text-format',
         component: TextFormat
