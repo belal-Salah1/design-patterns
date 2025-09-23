@@ -1,0 +1,19 @@
+<app-navbar [title]="routeData?.title" [subTitle]="routeData?.subTitle"></app-navbar>
+
+<div class="content  grid">
+    <div class="info w-full col-4" >
+        <p-floatLabel variant="on" class="m-3">
+            <input pInputText id="on" [ngModel]="value()" class="p-2" (ngModelChange)="setValue($event)" />
+            <label for="on">Enter the text</label>
+        </p-floatLabel>
+        <div class="mt-2 ml-3 h-3rem">
+    
+            <h2>{{value()}}</h2>
+        </div>
+    </div>
+    <div class=" flex flex-row gap-3 col-4 mt-0 pt-0">
+        <p-button class="block w-min p-2" label="setUpperCase"  pButton (click)="setFormat('uppercase')"></p-button>
+        <p-button class="block w-min p-2" label="setLowerCase" pButton (click)="setFormat('lowercase')"></p-button>
+    </div>
+
+</div>

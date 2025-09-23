@@ -1,14 +1,15 @@
 import { Routes } from '@angular/router';
 import { Post } from './pages/views/post/post';
-import { Adaptor } from './pages/adaptor/adaptor';
+import { Adaptor } from './pages/views/adaptor/adaptor';
+import { TextFormat } from './pages/views/text-format/text-format';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'post', pathMatch: 'full' },
     {
         data:
         {
-            title: 'Post',
-            subTitle: "Welcome to the post page"
+            title: 'singleton Pattern',
+            subTitle: "Welcome to the singleton patternpage"
         },
         path: 'post',
         component: Post
@@ -21,5 +22,14 @@ export const routes: Routes = [
         },
         path: 'adaptor',
         component: Adaptor
+    },
+    {
+        data:
+        {
+            title: 'Factory Pattern',
+            subTitle: 'Welcome to the factory pattern page'
+        },
+        path: 'text-format',
+        component: TextFormat
     }
 ];

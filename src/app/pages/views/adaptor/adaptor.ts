@@ -1,9 +1,9 @@
-import { PersonInfoAdaptor } from './../../shared/models/person-info-adaptor';
+import { PersonInfoAdaptor } from './../../../shared/models/person-info-adaptor';
 import { Component, signal } from '@angular/core';
-import { PersonInfo } from '../../shared/models/person-info';
-import { Navbar } from "../../shared/components/navbar/navbar";
+import { PersonInfo } from '../../../shared/models/person-info';
+import { Navbar } from "../../../shared/components/navbar/navbar";
 import { ActivatedRoute } from '@angular/router';
-import { RouteData } from '../../shared/models/route.model';
+import { RouteData } from '../../../shared/models/route.model';
 
 @Component({
   selector: 'app-adaptor',

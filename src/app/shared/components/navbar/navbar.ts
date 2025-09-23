@@ -1,10 +1,10 @@
 import { MenuItem } from 'primeng/api';
 import { Component, input } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
 @Component({
   selector: 'app-navbar',
-  imports: [MenubarModule, RouterLink],
+  imports: [MenubarModule, RouterLink, RouterLinkActive],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss'
 })
@@ -13,12 +13,16 @@ export class Navbar {
   subTitle = input<string | undefined>('');
   menuItems: MenuItem[] = [
     {
-      label:'Post',
-      routerLink: '/Singleton'
+      label:'Singleton',
+      routerLink: '/post'
     },
     {
       label: 'Adaptor',
       routerLink: '/adaptor'
+    },
+    {
+      label: "Factory",
+      routerLink: '/text-format'
     }
   ]
   constructor(){

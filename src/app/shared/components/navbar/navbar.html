@@ -3,7 +3,7 @@
     <h1>{{ title() }}</h1>
 </ng-template>
 <ng-template #item let-item >
-        <a pRipple class="flex   items-center p-menubar-item-link " [routerLink]="[item.routerLink]"> <span>{{ item.label }}</span></a>
+        <a pRipple class="flex items-center p-menubar-item-link " [routerLink]="[item.routerLink]" routerLinkActive="text-red-500"> <span>{{ item.label }}</span></a>
 </ng-template>
 <ng-template #end>
     <h2>{{ subTitle() }}</h2>
