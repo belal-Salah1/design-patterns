@@ -1,2 +1,8 @@
-<app-navbar [title]="title" [subTitle]="subTitle">
+<app-navbar [title]="routeData?.['title']" [subTitle]="routeData?.['subTitle']">
 </app-navbar>
+<p-card header="Simple Card " class="mt-2 border-1 " >
+    <p class="m-0">
+        {{post()?.title || 'Loading...'}}
+    </p>
+    <p>{{post()?.body || 'Loading...'}}</p>
+</p-card>
