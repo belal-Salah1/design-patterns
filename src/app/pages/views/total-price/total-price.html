@@ -1,0 +1,12 @@
+<app-navbar [title]="routeData?.title" [subTitle]="routeData?.subTitle"></app-navbar>
+
+<div>
+    <input type="number" pInputText [ngModel]="value()" (ngModelChange)="value.set($event)" />
+    <h1>Final price is: {{getFinalPrice()}}</h1>
+    <div class="flex flex-row gap-3  mt-4">
+        <p-button class="block" label="setOnline" severity="info" (click)="setOnline()"/>
+        <p-button class="block"  label="setInStore" severity="contrast" (click)="setInStore()"/>
+
+    </div>
+
+</div>

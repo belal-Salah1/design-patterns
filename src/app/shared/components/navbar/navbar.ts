@@ -23,6 +23,14 @@ export class Navbar {
     {
       label: "Strategy",
       routerLink: '/text-format'
+    },
+    {
+      label: "null&factory",
+      routerLink: '/null&factory'
+    },
+    {
+      label: "templateMethod",
+      routerLink:"/template"
     }
   ]
   constructor(){

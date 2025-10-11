@@ -1,0 +1,11 @@
+<app-navbar [title]="routeData?.title" [subTitle]="routeData?.subTitle"></app-navbar>
+<div class="msg flex font-bold h-5rem">
+  <h1>{{message()}}</h1>
+</div>
+
+<div class="flex flex-row gap-2">
+    <p-button label="toggleNotifications" (click)="toggleNotifications()" />
+    <p-button label="Success " severity="success"  (click)="getSuccessMsg()" />
+    <p-button label="Warning"  severity="warn" (click)="getWarningMsg()" />
+    <p-button label="Error" severity="danger" (click)="getErrorMsg()" />
+</div>
