@@ -11,16 +11,16 @@ export class Cancel implements OrderState {
     this.context = context;
   }
   processOrder(): void {
-    console.log('Cannot process order. Order is already shipped.');
+    console.log('Cannot process order. Order has been cancelled.');
   }
   shipOrder(): void {
-    console.log('Cannot ship order. Order is already shipped.');
+    console.log('Cannot ship order. Order has been cancelled.');
   }
   deliverOrder(): void {
-    console.log('Cannot deliver order. Order is already delivered.');
+    console.log('Cannot deliver order. Order has been cancelled.');
   }
   cancelOrder(): void {
-    console.log('Order cancelled successfully.');
+    console.log('Order is already cancelled.');
   }
   
 }
