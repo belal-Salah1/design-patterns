@@ -5,6 +5,7 @@ import { TextFormat } from './pages/views/text-format/text-format';
 import { Notification } from './pages/views/notification/notification';
 import { subtitle, title } from '@primeuix/themes/aura/card';
 import { TotalPrice } from './pages/views/total-price/total-price';
+import { OrderStateState } from './pages/views/order-state-state/order-state-state';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'post', pathMatch: 'full' },
@@ -50,5 +51,13 @@ export const routes: Routes = [
         },
         path:'template',
         component:TotalPrice
+    },
+    {
+        data:{
+            title: 'State Design Pattern',
+            subTitle: 'Welcome to the state design pattern page'
+        },
+        path:'state',
+        component:OrderStateState
     }
 ];

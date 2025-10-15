@@ -4,7 +4,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { OnlineDiscount } from '../../../core/services/online-discount';
 import { Navbar } from "../../../shared/components/navbar/navbar";
-import { ActivatedRoute, Route } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { RouteData } from '../../../shared/models/route.model';
 
 @Component({

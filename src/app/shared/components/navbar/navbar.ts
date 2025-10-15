@@ -31,6 +31,10 @@ export class Navbar {
     {
       label: "templateMethod",
       routerLink:"/template"
+    },
+    {
+      label: "State",
+      routerLink:"/state"
     }
   ]
   constructor(){

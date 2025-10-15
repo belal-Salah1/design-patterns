@@ -1,0 +1,8 @@
+<app-navbar [title]="routeData.title" [subTitle]="routeData.subTitle"></app-navbar>
+
+    <div class="flex mt-3 gap-2">
+        <p-button (click)="process()" label="Process"></p-button>
+        <p-button (click)="ship()" label="Ship"></p-button>
+        <p-button (click)="deliver()" label="Deliver"></p-button>
+        <p-button (click)="cancel()" label="Cancel"></p-button>
+    </div>
